@@ -158,7 +158,7 @@ MCFileTreeAbstractStWriter >> writeInDirectoryName: directoryNameOrPath fileName
         writeStreamFor: fileName , ext
         in: directory
         do: [ :fileStream | 
-            fileStream lineEndConvention: #'lf'.
+            "fileStream lineEndConvention: #'lf'."
             self setFileStream: fileStream.
             visitBlock value ]
 ]
